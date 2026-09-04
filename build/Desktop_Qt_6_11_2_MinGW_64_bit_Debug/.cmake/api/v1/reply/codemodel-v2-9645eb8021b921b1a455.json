@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e0e8132cb0ada7ef6040.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "System_Analyzer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "System_Analyzer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-System_Analyzer-Debug-7fa86787ba2c5cf6dcc0.json",
+					"name" : "System_Analyzer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "System_Analyzer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-System_Analyzer_autogen-Debug-4a380af15a3425e43c07.json",
+					"name" : "System_Analyzer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "System_Analyzer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-System_Analyzer_autogen_timestamp_deps-Debug-99a42d02ab85752fd858.json",
+					"name" : "System_Analyzer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug",
+		"source" : "C:/Users/ASUS/Documents/System_Analyzer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

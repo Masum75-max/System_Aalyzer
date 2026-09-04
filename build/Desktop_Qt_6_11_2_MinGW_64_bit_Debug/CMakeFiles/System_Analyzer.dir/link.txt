@@ -1,0 +1,3 @@
+C:\Qt\Tools\CMake_64\bin\cmake.exe -E rm -f CMakeFiles\System_Analyzer.dir/objects.a
+C:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\System_Analyzer.dir/objects.a @CMakeFiles\System_Analyzer.dir\objects1.rsp
+C:\Qt\Tools\mingw1310_64\bin\g++.exe -g -mwindows -Wl,--whole-archive CMakeFiles\System_Analyzer.dir/objects.a -Wl,--no-whole-archive -o System_Analyzer.exe -Wl,--out-implib,libSystem_Analyzer.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\System_Analyzer.dir\linkLibs.rsp

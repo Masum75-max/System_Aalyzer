@@ -14,6 +14,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    connect(ui->btnMiniMode, &QPushButton::clicked, this, &MainWindow::toggleMiniMode);
 
     // Initialize CPU times
     FILETIME ftime, fsys, fuser;
@@ -158,5 +159,95 @@ void MainWindow::on_genReport_clicked() {
         QMessageBox::information(this, "Success", "System report saved successfully!");
     } else {
         QMessageBox::warning(this, "Error", "Could not save the file at the specified location.");
+    }
+}
+
+// 1. Mini Mode Toggle Logic
+void MainWindow::toggleMiniMode()
+{
+    if (!isMiniMode) {
+
+        // Hide all other widgets
+        if (ui->CardActions) ui->CardActions->hide();
+        if (ui->cardBattery) ui->cardBattery->hide();
+        if (ui->dashButton) ui->dashButton->hide();
+        if (ui->batterySaverButton) ui->batterySaverButton->hide();
+        if (ui->optimizerButton) ui->optimizerButton->hide();
+        if (ui->settingsButton) ui->settingsButton->hide();
+        if (ui->leftPanel) ui->leftPanel->hide();
+        if (ui->mainTitle) ui->mainTitle->hide();
+
+        // Frameless + Always on top
+        this->setWindowFlags(
+            Qt::Window |
+            Qt::FramelessWindowHint |
+            Qt::WindowStaysOnTopHint
+            );
+
+        // Mini window size
+        this->resize(350, 250);
+
+        // Show only CPU card and Mini Mode button
+        ui->cardCPU->show();
+        ui->btnMiniMode->show();
+
+        // CPU card position
+        ui->cardCPU->move(
+            (this->width() - ui->cardCPU->width()) / 2,
+            30
+            );
+
+        // Button below CPU card
+        ui->btnMiniMode->move(
+            (this->width() - ui->btnMiniMode->width()) / 2,
+            ui->cardCPU->y() + ui->cardCPU->height() + 20
+            );
+
+        this->show();
+
+        isMiniMode = true;
+
+    } else {
+
+        // Hide CPU card and mini button
+        ui->cardCPU->hide();
+        ui->btnMiniMode->hide();
+
+        // Bring back normal window frame
+        this->setWindowFlags(Qt::Window);
+
+        this->resize(900, 550);
+
+        // Show notification
+        ui->mainTitle->setText("You need to restart the program again");
+        ui->mainTitle->setAlignment(Qt::AlignCenter);
+        ui->mainTitle->show();
+
+        // Center title in whole window
+        ui->mainTitle->setGeometry(
+            0,
+            0,
+            this->width(),
+            this->height()
+            );
+
+        this->show();
+
+        isMiniMode = false;
+    }
+}
+// 2. Mouse Press for Dragging Frameless Window
+void MainWindow::mousePressEvent(QMouseEvent *event) {
+    if (event->button() == Qt::LeftButton) {
+        dragPosition = event->globalPosition().toPoint() - frameGeometry().topLeft();
+        event->accept();
+    }
+}
+
+// 3. Mouse Move to Drag Window
+void MainWindow::mouseMoveEvent(QMouseEvent *event) {
+    if (event->buttons() & Qt::LeftButton) {
+        move(event->globalPosition().toPoint() - dragPosition);
+        event->accept();
     }
 }

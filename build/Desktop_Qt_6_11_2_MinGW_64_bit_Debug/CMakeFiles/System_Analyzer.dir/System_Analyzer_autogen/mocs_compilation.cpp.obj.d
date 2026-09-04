@@ -393,6 +393,37 @@ CMakeFiles/System_Analyzer.dir/System_Analyzer_autogen/mocs_compilation.cpp.obj:
  C:/Qt/6.11.2/mingw_64/include/QtCore/qabstracteventdispatcher.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qeventloop.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qdeadlinetimer.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QMouseEvent \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qevent.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qcoreevent.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qiodevice.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qurl.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qeventpoint.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qvector2d.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qvectornd.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpointingdevice.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qinputdevice.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qscreen.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QList \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QObject \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QRect \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QSize \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QSizeF \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/QTransform \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qnativeinterface.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qscreen_platform.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qguiapplication.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qcoreapplication.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qcoreapplication_platform.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qinputmethod.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qlocale.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qguiapplication_platform.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLayout \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlayout.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlayoutitem.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qboxlayout.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgridlayout.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLayoutItem \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/windows.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/excpt.h \

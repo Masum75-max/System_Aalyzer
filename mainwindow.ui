@@ -6,20 +6,350 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>1302</width>
+    <height>678</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow, QWidget#centralwidget {
+    background-color: #0f172a;
+}
+
+QFrame#leftPanel {
+    background-color: #1e293b;
+    border-right: 2px solid #334155;
+}
+
+QPushButton#dashButton, 
+QPushButton#batterySaverButton, 
+QPushButton#optimizerButton, 
+QPushButton#settingsButton {
+    background-color: #0f172a;
+    color: #94a3b8;
+    border: 1px solid #334155;
+    border-left: 4px solid #0284c7;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 6px;
+    margin-bottom: 6px;
+}
+
+QPushButton#dashButton:hover, 
+QPushButton#batterySaverButton:hover, 
+QPushButton#optimizerButton:hover, 
+QPushButton#settingsButton:hover {
+    background-color: #1e293b;
+    color: #38bdf8;
+    border: 1px solid #38bdf8;
+    border-left: 5px solid #00ffff;
+}
+
+QLabel#mainTitle {
+    color: #f8fafc;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+QGroupBox {
+    background-color: #1e293b;
+    color: #38bdf8;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 11px;
+    margin-top: 20px;
+    padding-top: 15px;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top left;
+    padding: 0 8px;
+    left: 12px;
+}
+
+QLabel#chargingStatus, 
+QLabel#label_2, 
+QLabel#label_3 {
+    color: #f8fafc;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+QGroupBox QLabel {
+    color: #cbd5e1;
+    font-size: 12px;
+}
+
+QProgressBar {
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 6px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    min-height: 18px;
+}
+
+QProgressBar::chunk {
+    background-color: #06b6d4;
+    border-radius: 5px;
+}
+
+QPushButton#cleanButton, 
+QPushButton#genReport {
+    background-color: #0284c7;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+QPushButton#cleanButton:hover, 
+QPushButton#genReport:hover {
+    background-color: #0369a1;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QFrame" name="leftPanel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>90</y>
+      <width>151</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Shape::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Shadow::Raised</enum>
+    </property>
+    <widget class="QPushButton" name="dashButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>30</y>
+       <width>111</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Dashboard</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="batterySaverButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>100</y>
+       <width>121</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Battery Saver</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="optimizerButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>180</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Optimizer</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="settingsButton">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>260</y>
+       <width>101</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Settings</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QLabel" name="mainTitle">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>60</y>
+      <width>411</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>                       System Health Dashboard</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="cardCPU">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>160</y>
+      <width>251</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>CPU AND RAM STATUS</string>
+    </property>
+    <widget class="QProgressBar" name="progCPU">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QProgressBar" name="progRAM">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>181</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>70</x>
+       <y>80</y>
+       <width>63</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>CPU:  0%</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>150</y>
+       <width>81</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>  RAM : 0%</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="cardBattery">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>160</y>
+      <width>261</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>BATTERY STATUS</string>
+    </property>
+    <widget class="QProgressBar" name="progBattery">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>40</y>
+       <width>211</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="value">
+      <number>24</number>
+     </property>
+    </widget>
+    <widget class="QLabel" name="chargingStatus">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>110</y>
+       <width>201</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Charging status: (plugged in)</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="CardActions">
+    <property name="geometry">
+     <rect>
+      <x>830</x>
+      <y>159</y>
+      <width>271</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>QUICK ACTIONS</string>
+    </property>
+    <widget class="QPushButton" name="cleanButton">
+     <property name="geometry">
+      <rect>
+       <x>52</x>
+       <y>40</y>
+       <width>161</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clean Temp Files</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="genReport">
+     <property name="geometry">
+      <rect>
+       <x>60</x>
+       <y>110</y>
+       <width>151</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Generate Report</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
+     <width>1302</width>
      <height>26</height>
     </rect>
    </property>

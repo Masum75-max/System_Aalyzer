@@ -600,10 +600,31 @@ void MainWindow::on_settingsButton_clicked() {
         title->setStyleSheet("color: #00d2ff; font-size: 24px; font-weight: bold; margin-bottom: 20px;");
         title->setAlignment(Qt::AlignCenter);
 
-        // Blank layout (Theme controls removed)
-        QHBoxLayout *themeLayout = new QHBoxLayout();
+        // --- 1. Launch on Startup Control ---
+        QHBoxLayout *startupLayout = new QHBoxLayout();
+        QLabel *lblStartup = new QLabel("Run Application on System Startup:", settingsPage);
+        lblStartup->setStyleSheet("color: #ffffff; font-size: 16px; font-weight: bold;");
 
-        // Brightness Slider Control
+        chkAutoStartup = new QCheckBox("Launch on Windows Startup", settingsPage);
+        chkAutoStartup->setCursor(Qt::PointingHandCursor);
+        chkAutoStartup->setStyleSheet(
+            "QCheckBox { color: #00d2ff; font-size: 15px; font-weight: bold; spacing: 8px; }"
+            "QCheckBox::indicator { width: 18px; height: 18px; border: 1px solid #00d2ff; border-radius: 4px; background: #121929; }"
+            "QCheckBox::indicator:checked { background-color: #00d2ff; image: none; }"
+            );
+
+        // Check Windows Registry status
+        QSettings bootSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", QSettings::NativeFormat);
+        QString appName = QCoreApplication::applicationName();
+        chkAutoStartup->setChecked(bootSettings.contains(appName));
+
+        connect(chkAutoStartup, &QCheckBox::toggled, this, &MainWindow::toggleAutoStartup);
+
+        startupLayout->addWidget(lblStartup);
+        startupLayout->addSpacing(15);
+        startupLayout->addWidget(chkAutoStartup);
+
+        // --- 2. Brightness Slider Control ---
         QVBoxLayout *brightLayout = new QVBoxLayout();
         QLabel *lblBright = new QLabel("Screen Dimmer / Brightness Overlay:", settingsPage);
         lblBright->setStyleSheet("color: #ffffff; font-size: 16px; font-weight: bold; margin-top: 15px;");
@@ -618,7 +639,7 @@ void MainWindow::on_settingsButton_clicked() {
         brightLayout->addWidget(lblBright);
         brightLayout->addWidget(brightnessSlider);
 
-        // Sound Test Control
+        // --- 3. Sound Test Control ---
         QHBoxLayout *soundLayout = new QHBoxLayout();
         QLabel *lblSound = new QLabel("Alert Sound Test:", settingsPage);
         lblSound->setStyleSheet("color: #ffffff; font-size: 16px; font-weight: bold; margin-top: 15px;");
@@ -638,7 +659,7 @@ void MainWindow::on_settingsButton_clicked() {
         soundLayout->addSpacing(20);
         soundLayout->addWidget(btnTestSound);
 
-        // Back Button
+        // --- 4. Back Button ---
         btnSettingsBack = new QPushButton("Back to Dashboard", settingsPage);
         btnSettingsBack->setCursor(Qt::PointingHandCursor);
         btnSettingsBack->setStyleSheet(
@@ -655,7 +676,7 @@ void MainWindow::on_settingsButton_clicked() {
         });
 
         layout->addWidget(title);
-        layout->addLayout(themeLayout);
+        layout->addLayout(startupLayout);
         layout->addLayout(brightLayout);
         layout->addLayout(soundLayout);
         layout->addWidget(btnSettingsBack);
@@ -677,6 +698,24 @@ void MainWindow::updateBrightness(int value) {
     brightnessOverlay->setStyleSheet(QString("background-color: rgba(0, 0, 0, %1);").arg(alpha));
     brightnessOverlay->show();
     brightnessOverlay->raise();
+}
+
+// Toggle Launch on Windows Startup
+void MainWindow::toggleAutoStartup(bool enabled) {
+    QSettings bootSettings("HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run", QSettings::NativeFormat);
+
+    QString appName = QCoreApplication::applicationName();
+    if (appName.isEmpty()) {
+        appName = "SystemAnalyzer";
+    }
+
+    QString appPath = QDir::toNativeSeparators(QCoreApplication::applicationFilePath());
+
+    if (enabled) {
+        bootSettings.setValue(appName, QString("\"%1\"").arg(appPath));
+    } else {
+        bootSettings.remove(appName);
+    }
 }
 
 void MainWindow::hideAllDynamicPages() {

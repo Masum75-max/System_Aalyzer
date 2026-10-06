@@ -437,6 +437,8 @@ CMakeFiles/System_Analyzer.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QCheckBox \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qcheckbox.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/windows.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/excpt.h \
@@ -769,8 +771,6 @@ CMakeFiles/System_Analyzer.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QDateTime \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QVBoxLayout \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QHBoxLayout \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/QCheckBox \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qcheckbox.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QSettings \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qsettings.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QCoreApplication

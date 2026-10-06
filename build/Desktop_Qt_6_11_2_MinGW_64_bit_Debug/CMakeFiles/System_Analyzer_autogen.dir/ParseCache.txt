@@ -188,6 +188,7 @@ C:/Users/ASUS/Documents/System_Analyzer/mainwindow.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtGui/qvectornd.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs_win.h
+ mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/QCheckBox
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/QDialog
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLayout
@@ -199,6 +200,7 @@ C:/Users/ASUS/Documents/System_Analyzer/mainwindow.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractbutton.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractslider.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/qboxlayout.h
+ mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/qcheckbox.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialog.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h
  mdp:C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgridlayout.h

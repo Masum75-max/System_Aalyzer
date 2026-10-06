@@ -11,6 +11,7 @@
 #include <QSlider>
 #include <QWidget>
 #include <QDialog>
+#include <QCheckBox>
 #include <windows.h>
 #include <iphlpapi.h>
 
@@ -41,6 +42,11 @@ private slots:
     // Network Speed & Usage Slots
     void on_optimizerButton_clicked();
     void updateNetworkMetrics();
+
+    // Settings Slots
+    void on_settingsButton_clicked();
+    void updateBrightness(int value);
+    void toggleAutoStartup(bool enabled);
 
 private:
     Ui::MainWindow *ui;
@@ -93,37 +99,25 @@ private:
     ULONG64 initialTotalBytes = 0;
     bool isFirstNetworkCheck = true;
 
-    // Internal Helper Methods
-    double getCpuUsage();
-    void checkBatteryAlerts(int percentage, bool isCharging);
-    ULONGLONG subtractTimes(const FILETIME& ftA, const FILETIME& ftB);
-    void enterMiniMode();
-    void exitMiniMode();
-
-protected:
-    void mousePressEvent(QMouseEvent *event) override;
-    void mouseMoveEvent(QMouseEvent *event) override;
-
-private slots:
-    void on_settingsButton_clicked();
-
-    void updateBrightness(int value);
-
-private:
     // Settings Page Widgets
     QWidget *settingsPage = nullptr;
     QPushButton *btnThemeToggle = nullptr;
     QSlider *brightnessSlider = nullptr;
     QPushButton *btnSettingsBack = nullptr;
     QWidget *brightnessOverlay = nullptr;
+    QCheckBox *chkAutoStartup = nullptr;
 
     bool isDarkMode = true;
 
-private:
+    // Internal Helper Methods
+    double getCpuUsage();
+    void checkBatteryAlerts(int percentage, bool isCharging);
+    ULONGLONG subtractTimes(const FILETIME& ftA, const FILETIME& ftB);
     void hideAllDynamicPages();
 
-
+protected:
+    void mousePressEvent(QMouseEvent *event) override;
+    void mouseMoveEvent(QMouseEvent *event) override;
 };
 
 #endif // MAINWINDOW_H
-

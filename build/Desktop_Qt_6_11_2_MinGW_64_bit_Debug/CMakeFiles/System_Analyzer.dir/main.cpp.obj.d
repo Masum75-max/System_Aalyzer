@@ -437,6 +437,8 @@ CMakeFiles/System_Analyzer.dir/main.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QWidget \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QDialog \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialog.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QCheckBox \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qcheckbox.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/windows.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/excpt.h \

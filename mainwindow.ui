@@ -16,310 +16,194 @@
   <property name="styleSheet">
    <string notr="true">QMainWindow,
 QWidget#centralwidget {
-
     background-color: #080f1f;
-
 }
 
-
 /* =========================================================
-   LEFT SIDEBAR
-   ========================================================= */
+LEFT SIDEBAR
+========================================================= */
 
 QFrame#leftPanel {
-
     background-color: #111c2f;
-
     border-right: 2px solid #1e3a5f;
-
 }
 
-
 /* =========================================================
-   SIDEBAR BUTTONS
-   ========================================================= */
+SIDEBAR BUTTONS
+========================================================= */
 
 QPushButton#dashButton,
 QPushButton#batterySaverButton,
 QPushButton#optimizerButton,
 QPushButton#settingsButton {
-
     background-color: #0b1426;
-
     color: #94a3b8;
-
     border: 1px solid #263b59;
-
     border-left: 4px solid #0284c7;
-
     padding: 12px 16px;
-
     text-align: left;
-
     font-size: 13px;
-
     font-weight: bold;
-
     border-radius: 7px;
-
     margin-bottom: 6px;
-
 }
-
 
 QPushButton#dashButton:hover,
 QPushButton#batterySaverButton:hover,
 QPushButton#optimizerButton:hover,
 QPushButton#settingsButton:hover {
-
     background-color: #17263d;
-
     color: #38bdf8;
-
     border: 1px solid #38bdf8;
-
     border-left: 5px solid #00e5ff;
-
 }
 
-
 /* =========================================================
-   MAIN TITLE
-   ========================================================= */
+MAIN TITLE
+========================================================= */
 
 QLabel#mainTitle {
-
     color: #f8fafc;
-
     font-size: 20px;
-
     font-weight: bold;
-
 }
 
-
 /* =========================================================
-   GROUP BOX
-   ========================================================= */
+GROUP BOX
+========================================================= */
 
 QGroupBox {
-
     background-color: #152238;
-
     color: #38bdf8;
-
     border: 1px solid #29425f;
-
     border-radius: 14px;
-
     font-weight: bold;
-
     font-size: 11px;
-
     margin-top: 20px;
-
     padding-top: 15px;
-
 }
-
 
 QGroupBox::title {
-
     subcontrol-origin: margin;
-
     subcontrol-position: top left;
-
     padding: 0 8px;
-
     left: 12px;
-
 }
 
-
 /* =========================================================
-   LABELS
-   ========================================================= */
+LABELS
+========================================================= */
 
 QLabel#chargingStatus,
 QLabel#label_2,
 QLabel#label_3 {
-
     color: #f8fafc;
-
     font-size: 13px;
-
     font-weight: bold;
-
 }
-
 
 QGroupBox QLabel {
-
     color: #cbd5e1;
-
     font-size: 12px;
-
 }
 
-
 /* =========================================================
-   PROGRESS BAR
-   ========================================================= */
+PROGRESS BAR
+========================================================= */
 
 QProgressBar {
-
     background-color: #0a1324;
-
     border: 1px solid #304762;
-
     border-radius: 7px;
-
     text-align: center;
-
     color: #ffffff;
-
     font-size: 11px;
-
     font-weight: bold;
-
     min-height: 18px;
-
 }
-
 
 QProgressBar::chunk {
-
     background-color: #06b6d4;
-
     border-radius: 6px;
-
 }
 
-
 /* =========================================================
-   QUICK ACTION BUTTONS
-   ========================================================= */
+QUICK ACTION BUTTONS
+========================================================= */
 
 QPushButton#cleanButton,
 QPushButton#genReport {
-
     background-color: #0284c7;
-
     color: #ffffff;
-
     border: none;
-
     border-radius: 7px;
-
     padding: 10px;
-
     font-size: 12px;
-
     font-weight: bold;
-
 }
-
 
 QPushButton#cleanButton:hover,
 QPushButton#genReport:hover {
-
     background-color: #0369a1;
-
 }
 
-
 /* =========================================================
-   MINI MODE BUTTON
-   ========================================================= */
+MINI MODE BUTTON
+========================================================= */
 
 QPushButton#btnMiniMode {
-
     background-color: #0b1b30;
-
     color: #38bdf8;
-
     border: 1px solid #0284c7;
-
     border-radius: 8px;
-
     padding: 9px 18px;
-
     font-size: 12px;
-
     font-weight: bold;
-
 }
-
 
 QPushButton#btnMiniMode:hover {
-
     background-color: #0284c7;
-
     color: #ffffff;
-
     border: 1px solid #38bdf8;
-
 }
-
 
 QPushButton#btnMiniMode:pressed {
-
     background-color: #0369a1;
-
     color: #ffffff;
-
 }
 
-
 /* =========================================================
-   CPU CARD
-   ========================================================= */
+CPU CARD
+========================================================= */
 
 QGroupBox#cardCPU {
-
     background-color: #152238;
-
     border: 1px solid #155e75;
-
     border-radius: 14px;
-
 }
-
 
 QGroupBox#cardCPU::title {
-
     color: #38bdf8;
-
 }
 
-
 /* =========================================================
-   BATTERY CARD
-   ========================================================= */
+BATTERY CARD
+========================================================= */
 
 QGroupBox#cardBattery {
-
     background-color: #152238;
-
     border: 1px solid #29425f;
-
     border-radius: 14px;
-
 }
 
-
 /* =========================================================
-   ACTION CARD
-   ========================================================= */
+ACTION CARD
+========================================================= */
 
 QGroupBox#CardActions {
-
     background-color: #152238;
-
     border: 1px solid #29425f;
-
     border-radius: 14px;
-
 }</string>
   </property>
   <widget class="QWidget" name="centralwidget">
@@ -361,7 +245,7 @@ QGroupBox#CardActions {
       </rect>
      </property>
      <property name="text">
-      <string>Battery Saver</string>
+      <string>Uptime Checker</string>
      </property>
     </widget>
     <widget class="QPushButton" name="optimizerButton">
@@ -374,7 +258,7 @@ QGroupBox#CardActions {
       </rect>
      </property>
      <property name="text">
-      <string>Optimizer</string>
+      <string>Speed And Usage</string>
      </property>
     </widget>
     <widget class="QPushButton" name="settingsButton">

@@ -84,7 +84,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 62,
+				"line" : 66,
 				"parent" : 0
 			},
 			{
@@ -302,7 +302,7 @@
 			{
 				"command" : 17,
 				"file" : 1,
-				"line" : 69,
+				"line" : 73,
 				"parent" : 0
 			},
 			{
@@ -444,11 +444,11 @@
 	"dependencies" : 
 	[
 		{
-			"id" : "System_Analyzer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
-		},
-		{
 			"backtrace" : 0,
 			"id" : "System_Analyzer_autogen::@6890427a1f51a3e7e1df"
+		},
+		{
+			"id" : "System_Analyzer_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "System_Analyzer::@6890427a1f51a3e7e1df",
@@ -481,6 +481,16 @@
 			{
 				"backtrace" : 6,
 				"fragment" : "C:\\Qt\\6.11.2\\mingw_64\\lib\\libQt6Widgets.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-liphlpapi",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lws2_32",
 				"role" : "libraries"
 			},
 			{

@@ -424,6 +424,20 @@ CMakeFiles/System_Analyzer.dir/System_Analyzer_autogen/mocs_compilation.cpp.obj:
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLayoutItem \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QSlider \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/windows.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/excpt.h \
@@ -664,6 +678,28 @@ CMakeFiles/System_Analyzer.dir/System_Analyzer_autogen/mocs_compilation.cpp.obj:
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/winsvc.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mcx.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/imm.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iphlpapi.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iprtrmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mprapi.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/lmcons.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ras.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/in6addr.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/naptypes.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ocidl.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/nldef.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipifcons.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/udpmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tcpmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipexport.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iptypes.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ifdef.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tcpestats.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/netioapi.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qtextcursor.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qtextformat.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpen.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qtextoption.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qtmochelpers.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qtmocconstants.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/q20algorithm.h

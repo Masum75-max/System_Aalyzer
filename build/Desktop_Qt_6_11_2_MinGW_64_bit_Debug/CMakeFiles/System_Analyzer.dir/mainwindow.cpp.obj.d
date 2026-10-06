@@ -423,6 +423,20 @@ CMakeFiles/System_Analyzer.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qboxlayout.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgridlayout.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLayoutItem \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlabel.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qpicture.h \
+ C:/Qt/6.11.2/mingw_64/include/QtGui/qtextdocument.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QPushButton \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qpushbutton.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QSlider \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qslider.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractslider.h \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QDialog \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/windows.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sdkddkver.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/excpt.h \
@@ -663,18 +677,32 @@ CMakeFiles/System_Analyzer.dir/mainwindow.cpp.obj: \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/winsvc.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mcx.h \
  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/imm.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iphlpapi.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iprtrmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mprapi.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/lmcons.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ras.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/in6addr.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/naptypes.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ocidl.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/nldef.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipifcons.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/udpmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tcpmib.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipexport.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iptypes.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ifdef.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tcpestats.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/netioapi.h \
  C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Debug/System_Analyzer_autogen/include/ui_mainwindow.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QVariant \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QApplication \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qapplication.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QFrame \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QGroupBox \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgroupbox.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlabel.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/qpicture.h \
- C:/Qt/6.11.2/mingw_64/include/QtGui/qtextdocument.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QMainWindow \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QMenuBar \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qmenubar.h \
@@ -682,14 +710,18 @@ CMakeFiles/System_Analyzer.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QProgressBar \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qprogressbar.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QPushButton \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qpushbutton.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractbutton.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QStatusBar \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qstatusbar.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QWidget \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/winsock2.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/psdk_inc/_ws1_undef.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ws2def.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/qos.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ws2tcpip.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ws2ipdef.h \
+ C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mstcpip.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QMessageBox \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qmessagebox.h \
- C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialog.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialogbuttonbox.h \
  C:/Qt/6.11.2/mingw_64/include/QtCore/QFile \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qfile.h \
@@ -734,4 +766,11 @@ CMakeFiles/System_Analyzer.dir/mainwindow.cpp.obj: \
  C:/Qt/6.11.2/mingw_64/include/QtCore/qtimezone.h \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QFileDialog \
  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qfiledialog.h \
- C:/Qt/6.11.2/mingw_64/include/QtCore/QDateTime
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QDateTime \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QVBoxLayout \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QHBoxLayout \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/QCheckBox \
+ C:/Qt/6.11.2/mingw_64/include/QtWidgets/qcheckbox.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QSettings \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/qsettings.h \
+ C:/Qt/6.11.2/mingw_64/include/QtCore/QCoreApplication

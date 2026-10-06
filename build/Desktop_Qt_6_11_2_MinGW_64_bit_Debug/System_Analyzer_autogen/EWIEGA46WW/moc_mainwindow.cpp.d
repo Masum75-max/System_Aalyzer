@@ -168,6 +168,7 @@ C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Deb
   C:/Qt/6.11.2/mingw_64/include/QtGui/qkeysequence.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qpaintdevice.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qpalette.h \
+  C:/Qt/6.11.2/mingw_64/include/QtGui/qpicture.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qpixelformat.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qpixmap.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qpointingdevice.h \
@@ -177,6 +178,7 @@ C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Deb
   C:/Qt/6.11.2/mingw_64/include/QtGui/qrgba64.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qscreen.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qscreen_platform.h \
+  C:/Qt/6.11.2/mingw_64/include/QtGui/qtextdocument.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qtgui-config.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qtguiexports.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qtguiglobal.h \
@@ -185,15 +187,27 @@ C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Deb
   C:/Qt/6.11.2/mingw_64/include/QtGui/qvectornd.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs.h \
   C:/Qt/6.11.2/mingw_64/include/QtGui/qwindowdefs_win.h \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QDialog \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLabel \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLayout \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/QLayoutItem \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/QMainWindow \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QPushButton \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QSlider \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/QWidget \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractbutton.h \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qabstractslider.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qboxlayout.h \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qdialog.h \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qframe.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qgridlayout.h \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlabel.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlayout.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qlayoutitem.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qmainwindow.h \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qpushbutton.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qsizepolicy.h \
+  C:/Qt/6.11.2/mingw_64/include/QtWidgets/qslider.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtabwidget.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgets-config.h \
   C:/Qt/6.11.2/mingw_64/include/QtWidgets/qtwidgetsexports.h \
@@ -517,14 +531,23 @@ C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/guiddef.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/handleapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/heapapi.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ifdef.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/imm.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/in6addr.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/inaddr.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/interlockedapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ioapiset.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipexport.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iphlpapi.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipifcons.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ipmib.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iprtrmib.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/iptypes.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/jobapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/joystickapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ktmtypes.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/libloaderapi.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/lmcons.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/locale.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/lzexpand.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mciapi.h \
@@ -537,15 +560,20 @@ C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mmiscapi2.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mmsyscom.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mmsystem.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/mprapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/msxml.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/namedpipeapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/namespaceapi.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/naptypes.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/nb30.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ncrypt.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/netioapi.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/nldef.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/oaidl.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/objbase.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/objidl.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/objidlbase.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ocidl.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ole2.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/oleauto.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/oleidl.h \
@@ -575,6 +603,7 @@ C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_signal.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/pthread_unistd.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/ras.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/realtimeapiset.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/reason.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/rpc.h \
@@ -610,12 +639,15 @@ C:/Users/ASUS/Documents/System_Analyzer/build/Desktop_Qt_6_11_2_MinGW_64_bit_Deb
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sys/types.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/sysinfoapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/systemtopologyapi.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tcpestats.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tcpmib.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/threadpoolapiset.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/threadpoollegacyapiset.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/timeapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/timezoneapi.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/tvout.h \
+  C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/udpmib.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/unknwn.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/unknwnbase.h \
   C:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/urlmon.h \

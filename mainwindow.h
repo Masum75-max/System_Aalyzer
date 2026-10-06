@@ -6,7 +6,15 @@
 #include <QMouseEvent>
 #include <QLayout>
 #include <QLayoutItem>
+#include <QLabel>
+#include <QPushButton>
+#include <QSlider>
+#include <QWidget>
+#include <QDialog>
 #include <windows.h>
+#include <iphlpapi.h>
+
+#pragma comment(lib, "iphlpapi.lib")
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -17,7 +25,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
+    explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
 private slots:
@@ -25,57 +33,97 @@ private slots:
     void on_cleanButton_clicked();
     void on_genReport_clicked();
     void toggleMiniMode();
+    void on_batterySaverButton_clicked();
+    void on_dashButton_clicked();
+    void updateUptimeLive();
+    void showBreakPopup();
+
+    // Network Speed & Usage Slots
+    void on_optimizerButton_clicked();
+    void updateNetworkMetrics();
 
 private:
     Ui::MainWindow *ui;
-    QTimer *updateTimer;
+    QTimer *updateTimer = nullptr;
 
     // CPU Calculation Helper Variables
     FILETIME prevSysKernel;
     FILETIME prevSysUser;
     FILETIME prevSysIdle;
 
-    // Mini Mode
+    // Mini Mode & Dragging
     bool isMiniMode = false;
-
-    // Window Dragging
     QPoint dragPosition;
 
-    // Normal Window State
+    // Normal Window State & Layout Preservation
     QRect normalWindowGeometry;
     Qt::WindowFlags normalWindowFlags;
-
-    // Original widget geometry
     QRect originalCardGeometry;
     QRect originalMiniButtonGeometry;
 
-    // Original layouts
     QLayout *cardOriginalLayout = nullptr;
     QLayout *buttonOriginalLayout = nullptr;
-
-    // Original layout items
     QLayoutItem *cardOriginalItem = nullptr;
     QLayoutItem *buttonOriginalItem = nullptr;
 
+    // Uptime View Widgets (Dynamic Creation)
+    QWidget *uptimePage = nullptr;
+    QLabel *lblUptimeDisplay = nullptr;
+    QTimer *uptimeTimer = nullptr;
+    QPushButton *btnBack = nullptr;
+
+    // Eye Care Break Reminder
+    QTimer *breakTimer = nullptr;
+    QTimer *breakCountdownTimer = nullptr;
+    int remainingBreakSeconds = 20;
+    QDialog *breakDialog = nullptr;
+    QLabel *lblBreakCountdown = nullptr;
+
+    // Network Speed & Data Usage Widgets
+    QWidget *networkPage = nullptr;
+    QLabel *lblDownloadSpeed = nullptr;
+    QLabel *lblUploadSpeed = nullptr;
+    QLabel *lblTotalData = nullptr;
+    QTimer *networkTimer = nullptr;
+    QPushButton *btnNetworkBack = nullptr;
+
+    // Network Helper Variables
+    ULONG64 prevInBytes = 0;
+    ULONG64 prevOutBytes = 0;
+    ULONG64 initialTotalBytes = 0;
+    bool isFirstNetworkCheck = true;
+
+    // Internal Helper Methods
     double getCpuUsage();
-
-    void checkBatteryAlerts(
-        int percentage,
-        bool isCharging
-        );
-
-    ULONGLONG subtractTimes(
-        const FILETIME& ftA,
-        const FILETIME& ftB
-        );
-
-    // Mini Mode helpers
+    void checkBatteryAlerts(int percentage, bool isCharging);
+    ULONGLONG subtractTimes(const FILETIME& ftA, const FILETIME& ftB);
     void enterMiniMode();
     void exitMiniMode();
 
 protected:
     void mousePressEvent(QMouseEvent *event) override;
     void mouseMoveEvent(QMouseEvent *event) override;
+
+private slots:
+    void on_settingsButton_clicked();
+
+    void updateBrightness(int value);
+
+private:
+    // Settings Page Widgets
+    QWidget *settingsPage = nullptr;
+    QPushButton *btnThemeToggle = nullptr;
+    QSlider *brightnessSlider = nullptr;
+    QPushButton *btnSettingsBack = nullptr;
+    QWidget *brightnessOverlay = nullptr;
+
+    bool isDarkMode = true;
+
+private:
+    void hideAllDynamicPages();
+
+
 };
 
 #endif // MAINWINDOW_H
+
